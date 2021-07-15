@@ -18,7 +18,7 @@ let upload = multer({
     storage,
     limit: { fileSize: 1000000 * 200},
 
-}).multiple('myfile');
+}).single('myfile');
 
 router.post('/',(req, res) => {
         
