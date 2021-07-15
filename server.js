@@ -18,9 +18,9 @@ const corsOptions = {
   }
   app.use(cors(corsOptions));
 
-}
+
 app.use(cors(corsOptions));
->>>>>>> 25d6116f738c2631f0e4594454074cba74fbc8e2
+
 
 
 app.set('views',path.join(__dirname, '/views'));
