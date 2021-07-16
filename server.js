@@ -7,6 +7,7 @@ const cors = require('cors');
 
 const PORT = process.env.PORT || 3000;
 app.use(express.static('public'));
+app.user(express.json());
 
 require('./config/db.js');
 connectDB();
