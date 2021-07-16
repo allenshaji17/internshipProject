@@ -12,6 +12,9 @@ app.use(express.static('public'));
 require('./config/db.js');
 connectDB();
 
+app.use(express.json());
+
+
 
 //cors
 const corsOptions = {
